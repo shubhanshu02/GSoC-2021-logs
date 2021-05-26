@@ -47,7 +47,8 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
   4. Test on superresolution and derain filters. Result: <span style="color:red">Fail! Segmentation Fault.</span>
 
 - **26/05/2021:** Complete work for async mode in TensorFlow backend.
-  1.  Check the source of segmentation fault. Source: Flush frame function does not exist.
-  2.  Add flush frame function to TensorFlow backend
-  3.  Test. Result: <span style="color:green">Working!</span>
-  4.  Finalize changes, rebase to PR branch and push.
+  1. Check the source of segmentation fault. Source: Flush frame function does not exist.
+  2. Add flush frame function to TensorFlow backend
+  3. Test. Result: <span style="color:green">Working!</span>
+  4. Finalize changes, rebase to PR branch and push.
+  5. Document functions related to `tf_infer_request`
