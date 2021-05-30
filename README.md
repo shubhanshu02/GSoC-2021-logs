@@ -55,7 +55,10 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
   5. Document functions related to `tf_infer_request`
 
 - **27/05/2021:** Discussions for further refactoring of code with mentor's idea of unifying async and sync mode in the backends.
+
   1. Corrections from code review of the PR.
   2. Add handling of cases where POSIX threads isn't supported.
   3. Further refactor code for async execution in TensorFlow backend.
   4. Tests? `make fate`? Result: <span style="color:green">Passed!</span>
+
+- **28/05/2021 and 29/05/2021:** Study the DNN module for unification of async and sync modes and discussions over email.
