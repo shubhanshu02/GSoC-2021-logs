@@ -1,6 +1,6 @@
-# GSoC'21 Timeline
+# GSoC'21 Project Logs
 
-This repository serves as a log for the weekly progress of my GSoC'21 project. The discussions with the mentors are not logged in this log.
+This repository serves as a log for the weekly progress of my GSoC'21 project with Intel Video and Audio for Linux. The discussions with the mentors are not logged in this log.
 
 Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.withgoogle.com/projects/#5224576843251712)
 
@@ -62,3 +62,11 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
   4. Tests? `make fate`? Result: <span style="color:green">Passed!</span>
 
 - **28/05/2021 and 29/05/2021:** Study the DNN module for unification of async and sync modes and discussions over email.
+
+- **30/05/2021 and 31/05/2021:** Two days break from development work. Plan further changes for unification.
+
+- **01/06/2021:**
+  1. Unify functions for async and sync inference.
+  2. Temporarily disable inference in all three backends.
+  3. Add `async` flag to `TFOptions` to be fetched from `backend_configs`.
+  4. Unify execution functions in TensorFlow backend and enable its execution.
