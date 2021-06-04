@@ -70,3 +70,9 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
   2. Temporarily disable inference in all three backends.
   3. Add `async` flag to `TFOptions` to be fetched from `backend_configs`.
   4. Unify execution functions in TensorFlow backend and enable its execution.
+
+- **02/06/2021:** Unify functions in OpenVINO backend and enable its execution from the DNN interface.
+
+- **03/06/2021:** Study native backend and plan the changes for unification.
+
+- **04/06/2021:** Add Task-Inference-based mechanism to Native Backend and enable its execution from the DNN interface.
