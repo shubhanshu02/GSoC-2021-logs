@@ -66,6 +66,7 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
 - **30/05/2021 and 31/05/2021:** Two days break from development work. Plan further changes for unification.
 
 - **01/06/2021:**
+
   1. Unify functions for async and sync inference.
   2. Temporarily disable inference in all three backends.
   3. Add `async` flag to `TFOptions` to be fetched from `backend_configs`.
@@ -76,3 +77,7 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
 - **03/06/2021:** Study native backend and plan the changes for unification.
 
 - **04/06/2021:** Add Task-Inference-based mechanism to Native Backend and enable its execution from the DNN interface.
+
+- **04/06/2021:** Add Task-Inference-based mechanism to Native Backend and enable its execution from the DNN interface.
+
+- **06/06/2021:** Divide the large async patch to 2-3 patches of smaller size.
