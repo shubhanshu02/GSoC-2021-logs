@@ -81,3 +81,5 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
 - **04/06/2021:** Add Task-Inference-based mechanism to Native Backend and enable its execution from the DNN interface.
 
 - **06/06/2021:** Divide the large async patch to 2-3 patches of smaller size.
+
+- **08/06/2021:** Cleanup after unification of sync and async mode. Remove async from DNNContext and edit documentation as required.
