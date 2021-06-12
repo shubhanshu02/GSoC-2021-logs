@@ -82,4 +82,45 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
 
 - **06/06/2021:** Divide the large async patch to 2-3 patches of smaller size.
 
+## Week 1
+
 - **08/06/2021:** Cleanup after unification of sync and async mode. Remove async from DNNContext and edit documentation as required.
+
+- **09/06/2021-10/06/2021:** Study native backend for RequestItem based inference to make async inference mechanism.
+
+- **11/06/2021-12/06/2021:** Plan async inference mechanism in Native Backend and discuss with the mentor over email. The two methods for inference mechanisms were as follows:
+
+  I noticed all the data from the frame is stored in the DnnOperand instance (with `input_name` as its name) in the `native_model`. This data is then used for calculation across all the layers and finally returns the data from the operand with the `output_name` as its name.
+
+  #### **Method 1**: On the existing inference mechanism, use the same DnnOperand from `native_model->operands` for every `RequestItem`.
+
+  1. Acquire mutex lock
+  2. Fill the input operand with the frame data and run all the layers' execution functions.
+  3. Fill the output frame in `TaskItem` with the data from the output operand.
+  4. Release the lock
+
+  **Pros**: Low memory usage as compared to method 2.
+
+  **Cons**: Single `RequestItem` is being executed at a time. All other threads are waiting for the lock.
+
+  #### **Method 2**: This method creates new `DnnOperand` items for the execution as follows.
+
+  1. Create a copy of `native_model->operands` and store it in the current `RequestItem`.
+  2. Fill its input operand with the frame data and run all the layers' execution functions using the newly created operands.
+  3. Fill the output frame in `TaskItem` with the data from the output operand.
+
+  **Pros**: Multiple `RequestItem` instances can execute at the same time, so faster execution.
+
+  **Cons**: More memory and CPU utilization. May lead to less responsiveness in the system (since already many joinable threads are executing in the Convolution layer)
+
+- 5 Patches Merged
+
+  - [lavfi/dnn: Extract TaskItem and InferenceItem from OpenVino Backend](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/f5ab8905fddee7a772998058e8cf18f93649fc5a)
+
+  - [lavfi/dnn: Convert output_name to char\*\* in TaskItem](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/446b4f77c106add0f6db4c0ffad1642d0920d6aa)
+
+  - [lavfi/dnn: Add nb_output to TaskItem](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/9675ebbb91891c826eeef065fd8a87d732f73ed0)
+
+  - [lavfi/dnn: Use uint8_t for async and do_ioproc in TaskItems](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/6b961f74096aff114d32480670943ce4d6d66826)
+
+  - [lavfi/dnn: Fill Task using Common Function](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/55092358189b98682d133c7b05bfcbb7ab6c750f)
