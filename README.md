@@ -25,6 +25,7 @@ Several inference frames will be combined to a single input tensor and executed 
    Currently, the TensorFlow backend supports only thesynchronous mode of model inference, which issingle-threaded and slow. Using asynchronous mode ina multithreaded environment will provide us with ahigher CPU utilization and faster execution due toits non-blocking nature.
 
 2. **Async Support in the Native Backend (Optional)**
+
    The native backend is used for model inference when the target system does not support OpenVino or TensorFlow backend. This backend also currently supports only the synchronous model execution. We can also extend the async support in the TensorFlow backend using detached threads to the native backend.
 
 3. **Support for Batch Mode in TensorFlow backend (Optional)**
