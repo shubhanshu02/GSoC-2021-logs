@@ -124,3 +124,9 @@ Project: [Async Support for TensorFlow Backend in FFmpeg](https://summerofcode.w
   - [lavfi/dnn: Use uint8_t for async and do_ioproc in TaskItems](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/6b961f74096aff114d32480670943ce4d6d66826)
 
   - [lavfi/dnn: Fill Task using Common Function](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/55092358189b98682d133c7b05bfcbb7ab6c750f)
+
+- **13/06/2021:** Refactor `execute_model_native` to two functions - one for filling operand with model input (from the `input_frame`) and one for completion callback to extract the `output_frame` from the DNN data.
+
+## Week 2
+
+- **14/06/2021:** Identified a memory leak in OpenVINO backend and discussions for Native backend new operand method.
