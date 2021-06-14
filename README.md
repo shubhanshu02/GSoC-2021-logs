@@ -45,7 +45,11 @@ This section may keep on changing as the project progresses.
 
 ## Logs for the Project
 
-The daily logs of the GSoC'21 projects can be viewed [here](logs.md).
+The daily logs of the GSoC'21 projects can be viewed [here](logs.md). The merged patch list can be viewed using the below links:
+
+- [FFmpeg Git](https://git.ffmpeg.org/gitweb/ffmpeg.git/search?s=Shubhanshu+Saxena;st=author).
+- [FFmpeg GitHub Mirror](https://github.com/FFmpeg/FFmpeg/commits?author=shubhanshu02)
+- [Intel Media Staging Area](https://github.com/intel-media-ci/ffmpeg/commits?author=shubhanshu02)
 
 ### Credits
 
