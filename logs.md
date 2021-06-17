@@ -128,5 +128,10 @@ This page contains the daily logs for the project work related to the project.
 - **14/06/2021:** Identified a memory leak in OpenVINO backend and discussions for Native backend new operand method. Add `copy_operands` function to copy Operands in Native Backend for use in `RequestItem` objects.
 
 - **15/06/2021:** Start work for Native backend async.
+
   - Add `nireq` and `RequestItem` to Native backend. `RequestItem` contains a copy of Operands from the model and POSIX threads elements like id and attributes.
-  - Convert Fill Model function and callback to use `request->operands` instead of `native_model->operands`.
+  - Use `request->operands` instead of `native_model->operands`.
+
+- **16/06/2021:** Refactor the execution function to two functions - one for filling operands with frame data and other for completion callback.
+
+- **17/06/2021:** Complete `RequestItem` based execution in `execute_model_native` and create functions for asynchronous execution of `RequestItem` in the Native Backend.
