@@ -16,13 +16,13 @@ This project focuses on implementing an asynchronous mechanism for model inferen
 
 The Tensorflow backend uses the TensorFlow C API, which currently does not provide functions for asynchronous execution. The support for async behavior can be provided using multithreading on the existing TensorFlow library functions. We will implement this behavior through detached threads that work independently of each other.
 
-Several inference frames will be combined to a single input tensor and executed together in a single batch to enable the batch mode. The DNN module authors saw a performance gain in the OpenVino backend with asynchronous batch inference against synchronous inference. A similar performance gain is expected from this project.
+Several inference frames will be combined into a single input tensor and executed together in a single batch to enable the batch mode. The DNN module authors saw a performance gain in the OpenVino backend with asynchronous batch inference against synchronous inference. A similar performance gain is expected from this project.
 
 ## GSoC'21 Deliverables
 
 1. **Async Support in TensorFlow backend (Required):**
 
-   Currently, the TensorFlow backend supports only thesynchronous mode of model inference, which issingle-threaded and slow. Using asynchronous mode ina multithreaded environment will provide us with ahigher CPU utilization and faster execution due toits non-blocking nature.
+   Currently, the TensorFlow backend supports only the synchronous mode of model inference, which is single-threaded and slow. Using asynchronous mode in a multithreaded environment will provide us with a higher CPU utilization and faster execution due to its non-blocking nature.
 
 2. **Async Support in the Native Backend (Optional)**
 
@@ -30,7 +30,7 @@ Several inference frames will be combined to a single input tensor and executed 
 
 3. **Support for Batch Mode in TensorFlow backend (Optional)**
 
-   Loading multiple image frames as a single batch and inferring them at once is less expensive on the system than processing all frames one by one. Enabling batch inference for model inference will significantly boost the TensorFlow backend’s performance if clubbed with the async mode.
+   Loading multiple image frames as a single batch and inferring them at once is less expensive on the system than processing all frames one by one. Enabling batch inference for model inference will significantly boost the TensorFlow backend's performance if clubbed with the async mode.
 
 ## Phase of Development
 
@@ -38,7 +38,7 @@ This section may keep on changing as the project progresses.
 
 1. Pre-start Refactoring of Code (Done)
 2. Asynchronous Inference in TensorFlow backend (Review Phase)
-3. Unification of sync and async mode from filter's perspective.
+3. Unification of sync and async mode from the filter's perspective.
 4. Refactoring in Native Backend for Asynchronous Inference
 5. Asynchronous Inference in Native backend
 6. Batch Inference in the TensorFlow backend

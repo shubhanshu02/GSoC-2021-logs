@@ -4,14 +4,14 @@ This page contains the daily logs for the project work related to the project.
 
 ## Community Bonding Period
 
-- **Some days back to 17/05/2021:** Install OpenVino and configure FFmpeg with OpenVino backend. (Look a really long time figuring out what's wrong)
-- **18/05/2021:** Study OpenVino and TensorFlow backend in detail for refactoring common code. Revise the GSoC proposal.
-- **19/05/2021:** Extract `TaskItem` and `InferenceItem` from OpenVino backend to `dnn_backend_common` and update the OpenVino backend accordingly. Tested on De-rain filter.
+- **Some days back to 17/05/2021:** Install OpenVINO and configure FFmpeg with OpenVINO backend. (Look a really long time figuring out what's wrong)
+- **18/05/2021:** Study OpenVINO and TensorFlow backend in detail for refactoring common code. Revise the GSoC proposal.
+- **19/05/2021:** Extract `TaskItem` and `InferenceItem` from OpenVINO backend to `dnn_backend_common` and update the OpenVINO backend accordingly. Tested on De-rain filter.
 - **20/05/2021:** Adjust `TaskItem` according to the TensorFlow backend, so that it can be used in both backends.
 
   1. Convert `char *output_name` to `char **output_names`.
   2. Add `nb_output` to `TaskItem` (required in TensorFlow backend)
-  3. Adjust the OpenVino backend accordingly and test.
+  3. Adjust the OpenVINO backend accordingly and test.
 
 - **21/05/2021:** Convert TensorFlow backend to `TaskItem` based inference and create a pull request [#407](https://github.com/intel-media-ci/ffmpeg/pull/407/) for the older changes.
 
@@ -111,7 +111,7 @@ This page contains the daily logs for the project work related to the project.
 
 - 5 Patches Merged
 
-  - [lavfi/dnn: Extract TaskItem and InferenceItem from OpenVino Backend](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/f5ab8905fddee7a772998058e8cf18f93649fc5a)
+  - [lavfi/dnn: Extract TaskItem and InferenceItem from OpenVINO Backend](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/f5ab8905fddee7a772998058e8cf18f93649fc5a)
 
   - [lavfi/dnn: Convert output_name to char\*\* in TaskItem](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/446b4f77c106add0f6db4c0ffad1642d0920d6aa)
 
@@ -135,3 +135,9 @@ This page contains the daily logs for the project work related to the project.
 - **16/06/2021:** Refactor the execution function to two functions - one for filling operands with frame data and other for completion callback.
 
 - **17/06/2021:** Complete `RequestItem` based execution in `execute_model_native` and create functions for asynchronous execution of `RequestItem` in the Native Backend.
+
+- **18/06/2021:** Continue Async Mode in Native Backend and Bug Fixes.
+
+  1. Write functions and thread routine for async execution in Native Backend.
+  2. Review TensorFlow backend asynchronous execution patchset again. Found some memory leaks. <span style="color:green">Fixed!</span>
+  3. Identified a memory leak in OpenVINO backend. In case of failures in sync mode, the `RequestItem` should be pushed back to the `ov_model->request_queue` or the memory held should be released.
