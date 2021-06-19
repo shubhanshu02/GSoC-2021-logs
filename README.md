@@ -2,6 +2,8 @@
 
 This repository serves as a log for the weekly progress of my GSoC'21 project with Intel Video and Audio for Linux. The discussions with the mentors are not logged in this log.
 
+If you have any questions, please feel free to create a new discussion in Discussion section of this repository.
+
 ## Project Details
 
 Project Title: **Async Support for TensorFlow Backend in FFmpeg**
