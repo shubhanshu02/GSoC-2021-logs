@@ -141,3 +141,9 @@ This page contains the daily logs for the project work related to the project.
   1. Write functions and thread routine for async execution in Native Backend.
   2. Review TensorFlow backend asynchronous execution patchset again. Found some memory leaks. <span style="color:green">Fixed!</span>
   3. Identified a memory leak in OpenVINO backend. In case of failures in sync mode, the `RequestItem` should be pushed back to the `ov_model->request_queue` or the memory held should be released.
+
+
+- **19/06/2021:** Documentation for newly created functions in Native Backend.
+
+
+- **20/06/2021:** Continue async support in Native Backend.
