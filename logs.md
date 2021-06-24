@@ -149,3 +149,7 @@ This page contains the daily logs for the project work related to the project.
 - **21/06/2021:** Async Support for TensorFlow Backend - Apply suggestions from code review.
 
 - **22/06/2021:** Try async support for TensorFlow Backend using different sessions (`TF_Session`) for each request.
+
+- **23/06/2021:**
+  1. Test speed of inference in the work done on previous day as compared to sync mode and current async implementation.
+  2. Native backend Convolution layer thread number discussion.
