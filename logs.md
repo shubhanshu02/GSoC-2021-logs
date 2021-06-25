@@ -158,3 +158,5 @@ This page contains the daily logs for the project work related to the project.
 - **24/06/2021:**
   1. Decrease thread number in Native Backend Convolution layer to `ncpu/4+1`.
   2. Experiment with TensorFlow C API for batch execution.
+
+- **25/06/2021:** Review current TensorFlow backend async changes for high number of nireq.
