@@ -146,6 +146,8 @@ This page contains the daily logs for the project work related to the project.
 
 - **20/06/2021:** Continue async support in Native Backend.
 
+## Week 3
+
 - **21/06/2021:** Async Support for TensorFlow Backend - Apply suggestions from code review.
 
 - **22/06/2021:** Try async support for TensorFlow Backend using different sessions (`TF_Session`) for each request.
@@ -162,6 +164,8 @@ This page contains the daily logs for the project work related to the project.
 
 - **25/06/2021:** Review current TensorFlow backend async changes for high number of nireq.
 
+## Week 4
+
 - **26/06/2021-29/06/2021:**
 
   1. Current patchset was failing on my pc with hgih value of nireq on the SRCNN filter. This problem was only visible with TensorFlow C API GPU variant.
@@ -171,3 +175,5 @@ This page contains the daily logs for the project work related to the project.
   3. Prepare a rough implementation for the above mentioned approach with semaphores for thread to wait instead of consuming CPU time. (already present in SafeQueue).
 
   4. Got to know about using session config to let TensorFlow allocate less memory. So, the issue was fixed.
+
+- **30/06/2021:** Refactor common code from Native backend and TensorFlow backend async patches to DNN Common.
