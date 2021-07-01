@@ -177,3 +177,5 @@ This page contains the daily logs for the project work related to the project.
   4. Got to know about using session config to let TensorFlow allocate less memory. So, the issue was fixed.
 
 - **30/06/2021:** Refactor common code from Native backend and TensorFlow backend async patches to DNN Common.
+
+- **01/07/2021:** Refactor the get async result function for use across all three backends.
