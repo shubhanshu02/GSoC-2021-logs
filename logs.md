@@ -183,3 +183,5 @@ This page contains the daily logs for the project work related to the project.
 - **02/07/2021-03/07/2021:**
   1. Define `DNNAsyncExecModule` for common async inference mechanism and functions to execute this module.
   2. Adjust the TensorFlow asynchronous patchset according to the above module.
+
+- **04/07/2021:** Identified memory leak in `execute_model_ov` in the OpenVINO backend.
