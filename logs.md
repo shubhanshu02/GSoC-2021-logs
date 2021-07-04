@@ -179,3 +179,7 @@ This page contains the daily logs for the project work related to the project.
 - **30/06/2021:** Refactor common code from Native backend and TensorFlow backend async patches to DNN Common.
 
 - **01/07/2021:** Refactor the get async result function for use across all three backends.
+
+- **02/07/2021-03/07/2021:**
+  1. Define `DNNAsyncExecModule` for common async inference mechanism and functions to execute this module.
+  2. Adjust the TensorFlow asynchronous patchset according to the above module.
