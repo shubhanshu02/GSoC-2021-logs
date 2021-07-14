@@ -181,7 +181,28 @@ This page contains the daily logs for the project work related to the project.
 - **01/07/2021:** Refactor the get async result function for use across all three backends.
 
 - **02/07/2021-03/07/2021:**
+
   1. Define `DNNAsyncExecModule` for common async inference mechanism and functions to execute this module.
   2. Adjust the TensorFlow asynchronous patchset according to the above module.
 
 - **04/07/2021:** Identified memory leak in `execute_model_ov` in the OpenVINO backend.
+
+## Week 5
+
+- Discussions over the Async Support for the TensorFlow backend.
+- Apply suggestions from code review.
+
+- **11/07/2021:** 6 Patches merged.
+
+  - [lavfi/dnn_backend_tf: Error Handling](https://git.ffmpeg.org/gitweb/ ffmpeg.git/commit/6f9570a63314051b3b333918eb13caae7498d6a4)
+  - [lavfi/dnn_backend_tf: Separate function for Completion Callback] (https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/ 84e4e60fdcbb2fd9193f6a0704caefbfb64092cb)
+  - [lavfi/dnn_backend_tf: Separate function for filling RequestItem] (https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/ b849228ae06fbcbf85b77e76dd46f63ea8c1406f)
+  - [lavfi/dnn_backend_tf: Request-based Execution](https://git.ffmpeg. org/ gitweb/ffmpeg.git/commit/08d8b3b631e659d8389fb975111e1cc3682abccc)
+  - [lavfi/dnn_backend_tf: Add TFInferRequest and TFRequestItem](https:// git.ffmpeg.org/gitweb/ffmpeg.git/commit/ a4de605110cb19ea6cf9fc244028f0f37fb40fc0)
+  - [lavfi/dnn_backend_tf: TaskItem Based Inference](https://git.ffmpeg. org/gitweb/ffmpeg.git/commit/68cf14d2b1c0d9bad4da78058172d079136fbddc)
+
+## Week 6
+
+- **13/07/2021:** Put up a pull request at intel staging area for native backend async patchset.
+
+- **14/07/2021:** Finalize batch execution patch for the TensorFlow backend.
