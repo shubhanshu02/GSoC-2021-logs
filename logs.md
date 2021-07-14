@@ -194,12 +194,12 @@ This page contains the daily logs for the project work related to the project.
 
 - **11/07/2021:** 6 Patches merged.
 
-  - [lavfi/dnn_backend_tf: Error Handling](https://git.ffmpeg.org/gitweb/ ffmpeg.git/commit/6f9570a63314051b3b333918eb13caae7498d6a4)
-  - [lavfi/dnn_backend_tf: Separate function for Completion Callback] (https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/ 84e4e60fdcbb2fd9193f6a0704caefbfb64092cb)
-  - [lavfi/dnn_backend_tf: Separate function for filling RequestItem] (https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/ b849228ae06fbcbf85b77e76dd46f63ea8c1406f)
-  - [lavfi/dnn_backend_tf: Request-based Execution](https://git.ffmpeg. org/ gitweb/ffmpeg.git/commit/08d8b3b631e659d8389fb975111e1cc3682abccc)
-  - [lavfi/dnn_backend_tf: Add TFInferRequest and TFRequestItem](https:// git.ffmpeg.org/gitweb/ffmpeg.git/commit/ a4de605110cb19ea6cf9fc244028f0f37fb40fc0)
-  - [lavfi/dnn_backend_tf: TaskItem Based Inference](https://git.ffmpeg. org/gitweb/ffmpeg.git/commit/68cf14d2b1c0d9bad4da78058172d079136fbddc)
+  - [lavfi/dnn_backend_tf: Error Handling](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/6f9570a63314051b3b333918eb13caae7498d6a4)
+  - [lavfi/dnn_backend_tf: Separate function for Completion Callback](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/84e4e60fdcbb2fd9193f6a0704caefbfb64092cb)
+  - [lavfi/dnn_backend_tf: Separate function for filling RequestItem](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/b849228ae06fbcbf85b77e76dd46f63ea8c1406f)
+  - [lavfi/dnn_backend_tf: Request-based Execution](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/08d8b3b631e659d8389fb975111e1cc3682abccc)
+  - [lavfi/dnn_backend_tf: Add TFInferRequest and TFRequestItem](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/4de605110cb19ea6cf9fc244028f0f37fb40fc0)
+  - [lavfi/dnn_backend_tf: TaskItem Based Inference](https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/68cf14d2b1c0d9bad4da78058172d079136fbddc)
 
 ## Week 6
 
