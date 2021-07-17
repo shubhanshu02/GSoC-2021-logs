@@ -208,3 +208,5 @@ This page contains the daily logs for the project work related to the project.
 - **14/07/2021:** Finalize batch execution patch for the TensorFlow backend.
 
 - **15/07/2021:** Put up a pull request for batch execution in the TensorFlow backend with unification patchset as base.
+
+- **16/07/2021:** Look for various error codes in FFmpeg for use in DNN module.
