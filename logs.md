@@ -210,3 +210,11 @@ This page contains the daily logs for the project work related to the project.
 - **15/07/2021:** Put up a pull request for batch execution in the TensorFlow backend with unification patchset as base.
 
 - **16/07/2021:** Look for various error codes in FFmpeg for use in DNN module.
+
+- **17/07/2021:** Working on error codes in the Average Pooling, Pad, Convolution 2D and Dense layers in the Native backend.
+
+- **18/07/2021:** Working on error codes in the Depth2Space, Maximum, Math Unary, Math Binary layers in the Native backend.
+
+- **19/07/2021:** Change `InferenceItem` to `SubTask` item in the DNN module.
+
+- **20/07/2021:** Working on error codes in `dnn_io_proc` module.
