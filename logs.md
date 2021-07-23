@@ -218,3 +218,9 @@ This page contains the daily logs for the project work related to the project.
 - **19/07/2021:** Change `InferenceItem` to `SubTask` item in the DNN module.
 
 - **20/07/2021:** Working on error codes in `dnn_io_proc` module.
+
+- **21/07/2021:** Study the error cases in the OpenVINO backend. Discuss regarding the error codes to return when OpenVINO framework API returns a status other than `OK`.
+
+- **22/07/2021:** Working on error codes in `dnn_backend_openvino` module.
+
+- **23/07/2021:** Finalise OpenVINO error specificity patch. Correct the error handling in `delete_request_item` macro and convert it to an inline function.
