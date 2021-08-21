@@ -12,6 +12,8 @@ Project: [GSoC Link](https://summerofcode.withgoogle.com/projects/#5224576843251
 
 Proposal: [Google Docs Link](https://docs.google.com/document/d/1J79_Id4XDYfMSJh94q11kHm1SjewYoLAOEX15uwNkhU/edit?usp=sharing)
 
+Final Report: [Medium Article](https://medium.com/@shubhanshu02/async-support-for-tensorflow-backend-in-ffmpeg-695998cd439c?source=friends_link&sk=ae01e6f2a982a387658f285ce9b0d9d1)
+
 ## Abstract
 
 This project focuses on implementing an asynchronous mechanism for model inference and batch execution in the TensorFlow backend of the FFmpeg Deep Neural Network module to boost model inference performance.
@@ -52,6 +54,17 @@ The daily logs of the GSoC'21 projects can be viewed [here](logs.md). The merged
 - [FFmpeg Git](https://git.ffmpeg.org/gitweb/ffmpeg.git/search?s=Shubhanshu+Saxena;st=author).
 - [FFmpeg GitHub Mirror](https://github.com/FFmpeg/FFmpeg/commits?author=shubhanshu02)
 - [Intel Media Staging Area](https://github.com/intel-media-ci/ffmpeg/commits?author=shubhanshu02)
+
+## Pull Requests
+
+- [libavfilter: Add Documentation to Queue](https://github.com/intel-media-ci/ffmpeg/pull/389)
+- [libavfilter: Add Documentation to SafeQueue](https://github.com/intel-media-ci/ffmpeg/pull/391)
+- [lavfi: Add Documentation to Native Backend Layers](https://github.com/intel-media-ci/ffmpeg/pull/396)
+- [lavfi/dnn: Async Support for TensorFlow Backend](https://github.com/intel-media-ci/ffmpeg/pull/407)
+- [lavfi/dnn: Unification of Async and Sync Modes](https://github.com/intel-media-ci/ffmpeg/pull/423)
+- [lavfi/dnn: Async Support for Native Backend](https://github.com/intel-media-ci/ffmpeg/pull/425)
+- [lavfi/dnn: Batch Execution in TensorFlow Backend](https://github.com/intel-media-ci/ffmpeg/pull/427)
+- [lavfi/dnn: Error Specificity](https://github.com/intel-media-ci/ffmpeg/pull/438)
 
 ### Credits
 

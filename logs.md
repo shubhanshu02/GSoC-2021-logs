@@ -224,3 +224,7 @@ This page contains the daily logs for the project work related to the project.
 - **22/07/2021:** Working on error codes in `dnn_backend_openvino` module.
 
 - **23/07/2021:** Finalise OpenVINO error specificity patch. Correct the error handling in `delete_request_item` macro and convert it to an inline function.
+
+## Further logs
+
+The project was nearly complete by this time. Rest of the discussions took place on the pull request discussions.
